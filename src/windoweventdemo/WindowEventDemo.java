@@ -1,4 +1,3 @@
-package windoweventdemo;
 import java.awt.*;        // using AWT containers and components
 import java.awt.event.*;  // using AWT events and listener interfaces
  
@@ -23,8 +22,11 @@ public class WindowEventDemo extends Frame
       add(tfCount);                // "this" Frame adds tfCount
  
       Button btnCount = new Button("Count");  // declare and allocate a Button
-      add(btnCount);               // "this" Frame adds btnCount
- 
+      add(btnCount);       
+      
+      Button btnClose = new Button("Close");
+      add(btnClose);
+
       btnCount.addActionListener(this);
         // btnCount fires ActionEvent to its registered ActionEvent listener
         // btnCount adds "this" object as an ActionEvent listener
@@ -69,4 +71,8 @@ public class WindowEventDemo extends Frame
    public void windowActivated(WindowEvent e) { }
    @Override
    public void windowDeactivated(WindowEvent e) { }
+
+    private void Button(String close) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
